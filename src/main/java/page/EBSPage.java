@@ -35,11 +35,11 @@ public class EBSPage extends CommonObjects {
 	
 	public void cardDetails()
 	{
-		cardNumber.sendKeys("4111111111111111");
+		cardNumber.sendKeys("411111000000");
 		mm.sendKeys("05");
 		yy.sendKeys("26");
 		cvv.sendKeys("123");
-		nameOnCard.sendKeys("ebs");
+		nameOnCard.sendKeys("e");
 		makePayment.click();
 	}
 
