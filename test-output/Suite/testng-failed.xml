@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="testcase.TestBase"/>
+    <listener class-name="utils.TestNGCustomReportListener"/>
+  </listeners>
+  <test name="Homepage(failed)">
+    <parameter name="chrome" value="chrome"/>
+    <parameter name="mozilla" value="mozilla"/>
+    <classes>
+      <class name="testcase.TestBookingDetailsPage">
+        <methods>
+          <include name="getResult"/>
+          <include name="testBookingDetailsPage"/>
+          <include name="saveReport"/>
+          <include name="extentReport"/>
+        </methods>
+      </class> <!-- testcase.TestBookingDetailsPage -->
+      <class name="testcase.TestTravellerInfoPage">
+        <methods>
+          <include name="getResult"/>
+          <include name="checkFareDetails"/>
+          <include name="saveReport"/>
+          <include name="extentReport"/>
+        </methods>
+      </class> <!-- testcase.TestTravellerInfoPage -->
+    </classes>
+  </test> <!-- Homepage(failed) -->
+</suite> <!-- Failed suite [Suite] -->

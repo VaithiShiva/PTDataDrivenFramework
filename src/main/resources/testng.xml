@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="testcase.TestBase"></listener>
+<listener class-name="utils.TestNGCustomReportListener"></listener>
+</listeners>
+
+  <test name="Homepage">
+<parameter name = "chrome" value = "chrome"/>
+  <parameter name = "mozilla" value = "mozilla"/>
+  <classes>
+  <class name="testcase.TestBase"></class>
+  <class name="testcase.TestHomepage"></class>
+  <class name="testcase.TestSearchListPage"></class>
+  <class name="testcase.TestTravellerInfoPage"></class>
+  <class name="testcase.TestEBS"></class>
+  <class name="testcase.TestBookingDetailsPage"></class>
+  <class name="testcase.TestBecomeAnAgent"></class>
+  </classes>
+  </test> 
+  
+  <!-- Test -->
+</suite> <!-- Suite -->
